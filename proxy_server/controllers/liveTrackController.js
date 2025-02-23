@@ -43,6 +43,7 @@ const fetchBusLocationFromVTS = async (vehicleID) => {
         });
 
         const data = response.data;
+        console.log(data);
         const vehicleLocation = data?.response?.[0]?.detailsOfLocation?.[0];
 
         if (!vehicleLocation) {
